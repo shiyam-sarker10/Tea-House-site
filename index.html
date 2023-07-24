@@ -4,12 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tea-house</title>
+    <!-- font manrope -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <!-- daisy and tailwind    -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .font-manrope{
+            font-family: 'Manrope', sans-serif;
+        }
+        .text-gray{
+            color:#777;
+        }
+    </style>
 </head>
 <body>
-    <h1>text</h1>
-    <p class="">lol</p>
+    <!-- header section  start -->
+    <header class="">
+        <div class="hero min-h-screen bg-[#FFF]">
+            <div class=" max-w-6xl mx-auto flex  justify-center flex-col lg:flex-row-reverse">
+                <div class="w-full m-8 md:m-0 md:w-1/2 p-8 relative">
+                    <img src="/images/banner.png" class="w-full rounded-lg " />
+                    <!-- rating  -->
+                    <div class="flex items-center gap-x-3 bg-white w-max p-2 bottom-6 left-4 lg:p-7 rounded-xl absolute lg:bottom-1 lg:left-12 shadow-md">
+                        <div>
+                            <img src="./images/starbanner.svg" alt="">
+                        </div>
+                        <div>
+                            <h3 class="text-3xl text-[#1C1C1C] font-extrabold font-manrope">5.00</h3>
+                            <p class="text-gray font-semibold">Trust Pilot Ratings</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="font-manrope m-8 md:p-0 w-full lg:w-1/2">
+                    <h1 class="text-4xl md:text-3xl lg:text-7xl font-extrabold text-[#1C1C1C]">It's good  <br>
+                    tea time at The Tea House</h1>
+                    <p class="py-6 text-sm text-gray w-full md:w-2/3 md:text-base ">Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.</p>
+                    <button class="btn text-white  font-bold bg-gradient-to-r from-[#FF8737] to-[#FF0502] ">Explore More
+                        <img class="w-[15px] " src="./images/arrow.png" alt="">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header section  end -->
 </body>
 </html>
